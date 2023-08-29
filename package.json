@@ -1,6 +1,6 @@
 {
   "name": "@keltlabs/blockpose",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Simple EVM indexer with javascript transform",
   "repository": "git@github.com:hoangtuanictvn/blockpose.git",
   "author": "Hoang Tuan <hoangtuanictvn@github.com>",
