@@ -37,7 +37,7 @@ export function getBinary() {
 
   const { name: packageName, version } = customRequire('../package.json');
 
-  const url = `https://github.com/keltlabs/blockpose/releases/download/${packageName}@${version}/${platform}.tar.gz`;
+  const url = `https://github.com/keltlabs/blockpose/releases/download/v${version}/${platform}.tar.gz`;
   const installDirectory = path.join(os.homedir(), '.blockpose');
 
   return new Binary(url, { name, installDirectory });

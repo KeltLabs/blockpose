@@ -10,7 +10,7 @@
     "npm"
   ],
   "bin": {
-    "chainpose": "./npm/run.js"
+    "blockpose": "./npm/run.js"
   },
   "scripts": {
     "postinstall": "node npm/install.js"
