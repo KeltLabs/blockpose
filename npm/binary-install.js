@@ -48,9 +48,7 @@ export class Binary {
     if (this.binaryPath === -1) {
       const binaryDirectory = this._getBinaryDirectory();
       this.binaryPath = join(binaryDirectory, this.name);
-      console.log(this.binaryPath)
     }
-    console.log(this.binaryPath)
     return this.binaryPath;
   }
 
