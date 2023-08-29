@@ -1,0 +1,27 @@
+{
+  "name": "blockpose",
+  "version": "1.0.0",
+  "description": "Simple EVM indexer with javascript transform",
+  "repository": "git@github.com:hoangtuanictvn/blockpose.git",
+  "author": "Hoang Tuan <hoangtuanictvn@github.com>",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "npm"
+  ],
+  "bin": {
+    "chainpose": "./npm/run.js"
+  },
+  "scripts": {
+    "postinstall": "node npm/install.js"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "rimraf": "^5.0.1",
+    "tar": "^6.1.15",
+    "update-notifier": "^6.0.2"
+  },
+  "devDependencies": {
+    "@types/update-notifier": "^6.0.1"
+  }
+}
