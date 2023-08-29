@@ -48,8 +48,9 @@ export class Binary {
     if (this.binaryPath === -1) {
       const binaryDirectory = this._getBinaryDirectory();
       this.binaryPath = join(binaryDirectory, this.name);
+      console.log(this.binaryPath)
     }
-
+    console.log(this.binaryPath)
     return this.binaryPath;
   }
 
@@ -72,7 +73,6 @@ export class Binary {
     return axios({ url: this.url, responseType: 'stream' })
       .then(res => {
         const writer = tar.x({ strip: 1, C: this.binaryDirectory });
-        console.log(this.binaryDirectory)
         return new Promise((resolve, reject) => {
           res.data.pipe(writer);
           let error = null;
