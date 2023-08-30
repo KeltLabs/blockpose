@@ -9,7 +9,7 @@ function getPlatform() {
 
   if (type === 'Linux' && arch === 'x64') {
     return {
-      platform: 'blockpose-linux-x64',
+      platform: 'blockpose-linux-amd64',
       name: 'blockpose',
     };
   }
